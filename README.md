@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Meu Segundo Projeto com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Me siga em:  [Linkedin](https://www.linkedin.com/in/gilvanete-silva/).
 
-## Available Scripts
+## O que são react hooks?
 
-In the project directory, you can run:
+Hooks são uma nova adição ao React 16.8. Eles permitem que você use o state e outros recursos do React sem escrever uma classe. Foi lançada na React Conf 2018.
 
-### `npm start`
+Hooks são funções que permitem a você “ligar-se” aos recursos de state e ciclo de vida do React a partir de componentes funcionais.
+Documentação oficial em: https://pt-br.reactjs.org/docs/hooks-intro.html
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Comandos para iniciar o Meu Segundo Projeto React
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Criando meu projeto:
+npx create-react-app
 
-### `npm test`
+------IMPORTANTE------
+Renderizando elementos:
+Como o react faz para mostrar todos os elementos e componentes na tela?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Vemos o ReactDOM.render()
 
-### `npm run build`
+### Hooks internos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Funções feitas pelo time do react e pela comunidade para nos ajudar a resolver problemas de ciclo de vida e estado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Vamos aprender hoje os 2 principais hooks internos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+useState: atualiza o estado
+useEffect: gera efeito na tela ao atualizar estado ou na montagem do componente.
 
-### `npm run eject`
+Uma playlist no youtube: https://pt-br.reactjs.org/docs/hooks-intro.html
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Cosumindo Api - Fech
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Melhor playlist e canais abertos para estudar que encontrei:
+https://www.youtube.com/watch?v=vfrEAz0BSbA&ab_channel=Celke
+https://www.youtube.com/watch?v=Z3F_EANQYVc&ab_channel=Celke
+https://www.youtube.com/watch?v=ye0XSzbU2so&ab_channel=EscoladeJavascript
+https://www.youtube.com/watch?v=Pbs1VIwPoRA&ab_channel=Rocketseat
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Aqui eu deixo minha impressão qom as contribuições que temos neste universo aberto!
+Vale a pena conferir muito mais. Navegar de forma live!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### State?
+Serve para fazer um componente ter o poder mágico de guardar dados na memória!
 
-## Learn More
+Como usar useState em 3 passos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1- Importe { useState }
+2- Faça a atribuição via desestruturação
+3- Declare no jsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Ciclo de Vida?
 
-### Code Splitting
+Antes do componente ser montado Depois do componente ser montado
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Eventos
 
-### Analyzing the Bundle Size
+React é uma lib de javascript, então também temos eventos acontecendo por aqui e é possível captura-los. Vamos aprender hoje os 2 principais eventos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+onClick
+onChange
 
-### Making a Progressive Web App
+### A tríade do react:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Visual: o retorno dos elementos nos componentes
+Funcional: as funções de javascript que dão vida aos componentes
+Estado: Cria o poder de memória nos componentes
 
-### Advanced Configuration
+### Dicionário react - Parte II
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+hooks: ganho, funções internas e customizadas para ajudar a resolver ciclo de vida e estado de componentes
+state: memória para manipular dados em componentes.
 
-### Deployment
+### Exemplos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Recurso/Descrição
+onClick	Mostrando no console o evento de click funcionando!
 
-### `npm run build` fails to minify
+2. Recurso/Descrição
+onChange	Mostrando no console o valor digitado num formulário!!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Recurso/Descrição
+contador de clicks	Agora vamos treinar criar componentes, guardar memória no componente e atualizar na tela a quantidade de vezes que um botão está sendo clicado.
+
+4. Recurso/Descrição
+Contador	Agora vamos treinar criar componentes, guardar memória no componente e atualizar na tela um contador que soma 1 ou diminui 1 toda vez que o botão for clicado.
+
+5. Recurso/Descrição
+Tick	Vamos criar um componente que retorna nosso horário local e atualiza automaticamente na tela.
+
+6. Recurso/Descrição
+lista externa	Chegou o grande momento de consumir uma api externa e renderizar os dados na tela, vamos usar o useEffect e useState para isso.
+
+7. Recurso/Descrição
+lista interna + busca	Agora vamos treinar criar componentes, consumir dados internos, criar uma barra de busca que filtra o valor digitado atualizando o componente na tela.
+
+8. Recurso/Descrição
+Lista externa + busca	Vamos consumir uma api externa, mostrar lista na tela e através de uma busca, vamos mudar o estado apenas mostrando na tela o item digitado.
+
+### Minha experiência:
+
+É sempre um mundo novo! 
+Com o React eu tenho a sensação leve!
+Universo, me surpreenda!
